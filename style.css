@@ -1,0 +1,14 @@
+body {
+    background-image: radial-gradient(red, yellow);
+}
+
+.font {
+  font-family: "Mountains of Christmas", serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  font-size: 80px
+}
+
+p {
+    font-size: xxx-large !important;
+}
