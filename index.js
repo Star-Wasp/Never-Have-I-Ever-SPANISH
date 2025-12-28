@@ -29,11 +29,17 @@ var neverHaveIEver = [
     "he gastado más de 200 euros en una noche de fiesta.",
     "he estado en una playa nudista.",
     "he copiado en un examen."
-]
+];
 
-var level = 0
+var level = 0;
 
 $(".next").click(function() {
-    level++;
-    $("p").text(neverHaveIEver[level]);    
+    if (level < neverHaveIEver.length - 1) {
+       level++; 
+       $("p").text(neverHaveIEver[level]);
+    } else {
+        $("p").text("¡Juego terminado! 🎉");
+        // Disable the next button
+        $(".next").prop("disabled", true);
+    }
 })
