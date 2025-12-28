@@ -38,8 +38,9 @@ $(".next").click(function() {
        level++; 
        $("p").text(neverHaveIEver[level]);
     } else {
-        $("p").text("¡Juego terminado! 🎉");
+        $("h1").text("¡Juego terminado! 🎉");
+        $("p").text("")
         // Disable the next button
         $(".next").prop("disabled", true);
     }
-})
+});
